@@ -1,0 +1,76 @@
+
+
+.container {
+    position: fixed; top: 0; left: 0; right: 0;
+    max-width: 100%;
+    min-height: 90px;
+    padding: 5px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.fieldLogo {
+    a {
+        display: flex;
+        align-items: center;
+
+        span {
+            background-color: transparent;
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            transition: color 0.4s ;
+            color: var(--color-text);
+            white-space: nowrap;
+        }
+
+        span:hover {
+            color: #053df7;
+        }
+    }
+}
+
+.fieldLogo a .fieldImgLogo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #053df7;
+    margin-right: 15px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.container .fieldMenu ul {
+    display: flex;
+    padding: 5px;
+    font-size: 1.6rem;
+
+    .currentItem {
+        padding: 20px;
+
+        a {
+            display: inline-block;
+            padding: 20px auto;
+            border: 1px solid transparent;
+            font-weight: 700;
+            letter-spacing: 1px;
+            transition: color 0.4s;
+            color: var(--color-text);
+        }
+
+        a:hover {
+            color: #053df7;
+        }
+    }
+}
+
+.container .fieldMenu ul .currentItem.mark a {
+    border-bottom: 2px solid #053df7;
+    color: #000;
+}
