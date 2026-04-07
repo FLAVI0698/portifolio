@@ -1,0 +1,18 @@
+.content_container_who_Iam {
+   border-radius: 5px;
+   padding: 0 0.5rem;
+}
+
+.content_container_who_Iam .content_title_who_Iam {
+   font-size: 3rem;
+   font-weight: 700;
+   margin-bottom: 3rem;
+}
+
+.content_container_who_Iam .content_text_who_Iam {
+   font-size: 1.9rem;
+   font-weight: 500;
+   margin-bottom: 1.5rem;
+   text-align: justify;
+   
+}

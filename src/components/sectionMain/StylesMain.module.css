@@ -1,0 +1,19 @@
+.containerMain {
+    display: grid;
+    place-items: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #b9b9b9;
+}
+
+.containerMain .content {
+    max-width: 120rem;
+    width: 92%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+    background: #fff;
+}

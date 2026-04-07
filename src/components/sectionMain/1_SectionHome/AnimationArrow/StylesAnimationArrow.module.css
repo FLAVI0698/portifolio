@@ -1,0 +1,32 @@
+.fieldAnimation {
+   font-size: 40px;
+   position: absolute; bottom: 0;
+   left: 50%; transform: translateX(-50%); 
+   align-self: center;
+   overflow-x: hidden;
+   padding-top: 30px;
+}
+
+.fieldAnimation .arrow {
+   position: relative;
+   display: flex;
+   align-items: center;
+   padding-bottom: 5px;
+   animation: slide-in 2.5s  infinite ease-in-out ;
+
+   .icon {
+      align-self: center;
+      font-size: clamp(2rem, 50vw, 5rem);
+      color: #4f4e4e;
+   }
+}
+
+@keyframes slide-in {
+  0%   { bottom: 0; filter: none; }
+  10%  { bottom: 30px; filter: none; }
+  20%  { bottom: 0; filter: drop-shadow(0 12px 10px rgba(0,0,0,0.6)); }
+  30%  { bottom: 20px; filter: none; }
+  40%  { bottom: 0;  filter: drop-shadow(0 12px 10px rgba(0,0,0,0.6));}
+  50%  { bottom: 15px; filter: none; }
+  60%  { bottom: 0; filter: drop-shadow(0 12px 10px rgba(0,0,0,0.6)); }
+}

@@ -1,0 +1,65 @@
+.sectionHome {
+    position: relative;
+    min-width: 100vw;
+    background-image: url('../../../assets/bg-img-home/bg-img-home2.png');
+    background-position: center left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: 50rem;
+    max-height: 120rem;
+}
+
+.hero .heroContent {
+    max-width: 900px;
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
+    padding: 0;
+
+}
+
+.hero .heroContent .title {
+    font-size: clamp(1rem, 5vw, 5rem);
+    letter-spacing: 1px;
+    font-weight: 800;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.hero .heroContent .textMain {
+    font-size: 2.2rem;
+    margin: 0 20px 20px;
+}
+
+.hero .heroContent .btnProjects {
+    display: inline-block;
+    padding: 1.5rem 8rem;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: var(--color-bg);
+    color: #ffffff;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s;
+}
+
+.hero .heroContent .btnProjects:hover {
+    background-color: var(--color-hover);
+}
+
+@media (max-width: 1200px) {
+    .hero .heroContent .title {
+        /* color: red; */
+    }
+}

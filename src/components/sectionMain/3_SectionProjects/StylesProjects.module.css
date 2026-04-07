@@ -1,0 +1,177 @@
+.container_projects {
+  margin-top: 2rem;
+  align-self: stretch;
+  margin-bottom: 5rem;
+}
+
+.projects_title {
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 1rem;
+  text-align: center;
+  line-height: 40px;
+}
+
+.title_line {
+  width: 90px;
+  height: 5px;
+  background: #bbbbbb;
+  margin: 0.6rem auto 1.2rem;
+  border-radius: 2px;
+}
+
+.carousel_wrapper {
+  margin: 0 3rem;
+  overflow: hidden; /* Esconde os cards saindo pela lateral */
+}
+
+/* ===== Grade de 3 cards ===== */
+.carousel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+/* ===== Animações de slide ===== */
+@keyframes slideOutLeft {
+  from { transform: translateX(0);     opacity: 1; }
+  to   { transform: translateX(-80px); opacity: 0; }
+}
+
+@keyframes slideOutRight {
+  from { transform: translateX(0);    opacity: 1; }
+  to   { transform: translateX(80px); opacity: 0; }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(80px); opacity: 0; }
+  to   { transform: translateX(0);    opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-80px); opacity: 0; }
+  to   { transform: translateX(0);     opacity: 1; }
+}
+
+.slide_out_left  { animation: slideOutLeft  0.3s ease forwards; }
+.slide_out_right { animation: slideOutRight 0.3s ease forwards; }
+.slide_in_right  { animation: slideInRight  0.4s ease forwards; }
+.slide_in_left   { animation: slideInLeft   0.4s ease forwards; }
+
+/* ===== Card ===== */
+.card_carousel {
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #1e1e25;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card_carousel:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card_carousel img {
+  width: 100%;
+  display: block;
+}
+
+.card_content {
+  padding: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.title_card {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.card_list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.list_items {
+  font-weight: 600;
+  padding: 0.3rem 1rem;
+  margin: 0.2rem 0.4rem 0.2rem 0;
+  border: 1px solid #053df7;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.description {
+  line-height: 2rem;
+  text-align: justify;
+  font-size: 1.3rem;
+}
+
+.btn {
+  display: block;
+  text-align: center;
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #053df7;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #032ec2;
+}
+
+/* ===== Botões de navegação ===== */
+.nav_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 2rem 0 0.5rem 0;
+}
+
+.nav_btn {
+  background-color: #053df7;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  font-size: 2.2rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(5, 61, 247, 0.4);
+}
+
+.nav_btn:hover:not(:disabled) {
+  background-color: #032ec2;
+  transform: scale(1.1);
+}
+
+.nav_btn:disabled {
+  background-color: #444;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.page_indicator {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #000;
+  min-width: 50px;
+  text-align: center;
+}

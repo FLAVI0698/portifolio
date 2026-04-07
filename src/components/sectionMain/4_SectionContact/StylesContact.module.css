@@ -1,0 +1,215 @@
+.section {
+	width: 100%;
+	padding: 5rem 0.5rem;
+}
+
+.header {
+	padding: 0 0 2rem 0;
+}
+
+.title {
+	font-size: 4rem;
+	font-weight: 700;
+	letter-spacing: 3px;
+	margin-bottom: 0.2rem;
+	line-height: 40px;
+}
+
+.title_line {
+	/* --- linha abaixo do titulo --- */
+	width: 90px;
+	height: 5px;
+	background: #bbbbbb;
+	margin: 0.6rem auto 1.2rem;
+	border-radius: 2px;
+}
+
+.subtitle {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+/* --- Formulario de dados --- */
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 2rem;
+	max-width: 1100px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.form_card {
+	border-radius: 14px;
+	padding: 2.8rem;
+	border-radius: 8px;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+}
+
+.row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1.2rem;
+}
+
+.field {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	margin-bottom: 1.3rem
+}
+
+.label {
+	font-size: 1.2rem;
+	font-weight: 600;
+	text-align: left;
+}
+
+.input {
+	border: 1px solid #9b9b9b;
+	border-radius: 8px;
+	font-size: 1.3rem;
+	padding: 0.8rem 1rem;
+	outline: none;
+	width: 100%;
+	transition: border-color 0.3s, box-shadow 0.2s, transform 0.3s;
+}
+
+.input::placeholder {
+	color: #807e7e;
+}
+
+.input:hover {
+	border-color: #e7e7e7;
+	background-color: #d1d1d1;
+	transform: translateY(-2px);
+}
+
+.input:focus {
+	border-color: #e7e7e7;
+	background-color: #d1d1d1;
+	transform: translateY(-2px);
+	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.select_wrapper {
+	position: relative;
+}
+
+.select_trigger {
+	color: #807e7e;
+	cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.placeholder_text { color: #44445a; }
+.selected_text    { color: #161616; }
+
+.arrow {
+  transition: transform 0.3s;
+  font-size: 1.2rem;
+}
+.arrow.open { transform: rotate(180deg); }
+
+.select_options {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  background: #fdfdff;
+  border: 1px solid #9b9b9b;
+  border-radius: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0.4rem;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.option {
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #0a0a0a; 
+  transition: background 0.15s;
+}
+
+.option:hover      { background:#053df7; color: #fff; font-weight: 500;}
+.option_active     { background: #053df7; color: #fff; font-weight: 500;}
+
+.textarea {
+	resize: vertical;
+	min-height: 130px;
+}
+
+/* --- Botão submit do formulario --- */
+.btn_submit {
+	border: none;
+	border-radius: 8px;
+	padding: 1rem 2rem;
+	font-size: 1.4rem;
+	font-weight: 700;
+	cursor: pointer;
+	background: #053df7;
+	color: #fff;
+	box-shadow: 0 4px 20px rgba(124, 92, 252, 0.35);
+	transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+}
+
+.btn_submit:hover:not(:disabled) {
+	background: var(--color-hover);
+	transform: translateY(-2px);
+}
+
+.btn_submit.loading {
+	background: #555;
+	cursor: not-allowed;
+	box-shadow: none;
+	transform: none;
+}
+
+.btn_submit.success {
+	background: #2ecc71;
+	box-shadow: 0 4px 20px rgba(46, 204, 113, 0.4);
+}
+
+.btn_submit.error {
+	background: #e74c3c;
+	box-shadow: 0 4px 20px rgba(231, 76, 60, 0.4);
+}
+
+/* --- Informações --- */
+.info_card {
+	background: #dddddd;
+	border: 1px solid rgba(255, 255, 255, 0.07);
+	border-radius: 14px;
+	padding: 2.4rem;
+}
+
+.info_title {
+	font-size: 2.8rem;
+	font-weight: 700;
+	margin: 0;
+}
+
+.contact_list {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 1.1rem;
+}
+
+.contact_item {
+	display: flex;
+	align-items: flex-start;
+}

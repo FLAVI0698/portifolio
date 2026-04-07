@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import { Header } from './components/header/Header'
-import { Main } from './components/main/Main'
+import { Header } from './components/sectionHeader/Header'
+import { Main } from './components/sectionMain/Main'
 
 function App() {
 
@@ -14,6 +14,40 @@ function App() {
 }
 
 export default App
+
+// import { useRef } from "react";
+// import Header from "./components/sectionHeader/navBar/Header";
+// import SectionMain from "./components/sectionMain/SectionMain";
+
+// function App() {
+//   const homeRef = useRef(null);
+//   const sobreRef = useRef(null);
+//   const projetoRef = useRef(null);
+//   const habilidadesRef = useRef(null);
+
+//   const scrollToSection = (ref) => {
+//     ref.current.scrollIntoView({ behavior: "smooth" });
+//   };
+
+//   return (
+//     <>
+//       <Header
+//         scrollToSection={scrollToSection}
+//         homeRef={homeRef}
+//         sobreRef={sobreRef}
+//         projetoRef={projetoRef}
+//         habilidadesRef={habilidadesRef}
+//       />
+
+//       <SectionMain
+//         homeRef={homeRef}
+//         sobreRef={sobreRef}
+//         projetoRef={projetoRef}
+//         habilidadesRef={habilidadesRef}
+//       />
+//     </>
+//   );
+// }
 
 //   useEffect(() => {
 //     // simulação de carregamento (ex: fonts, dados, etc.)

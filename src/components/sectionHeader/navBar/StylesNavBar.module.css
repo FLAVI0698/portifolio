@@ -1,0 +1,28 @@
+.fieldMenu ul {
+    display: flex;
+    padding: 5px;
+    font-size: 1.6rem;
+
+    .currentItem {
+        padding: 20px;
+
+        a {
+            display: inline-block;
+            padding: 20px auto;
+            border: 1px solid transparent;
+            font-weight: 700;
+            letter-spacing: 1px;
+            transition: color 0.4s;
+            color: var(--color-text);
+        }
+
+        a:hover {
+            color: #053df7;
+        }
+    }
+}
+
+.fieldMenu ul .currentItem.mark a {
+    border-bottom: 2px solid #053df7;
+    color: #000;
+}
