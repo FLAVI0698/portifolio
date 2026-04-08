@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './StylesFieldLogo.module.css'
+import logoImg from '../../../assets/img-logo2.png'
 
 export const FieldLogo = () => {
    return (
@@ -8,7 +9,7 @@ export const FieldLogo = () => {
 
             <a href="#home">
                <div className={styles.fieldImgLogo}>
-                  <img src="../src/assets/img-logo2.png" alt="image-logo" />
+                  <img src={logoImg} alt="image-logo" />
                </div>
                <span>FLAVIO GABRIEL</span>
             </a>
