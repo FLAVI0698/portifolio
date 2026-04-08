@@ -2,9 +2,9 @@ import React from 'react'
 import styles from '../StylesContact.module.css'
 
 const contactInfo = [
-   { icon: "📍", label: "Localização", value: "Franca – São Paulo" },
-   { icon: "✉️", label: "E-mail", value: "jeanluccalbx@gmail.com" },
-   { icon: "📞", label: "Telefone", value: "(16) 99264-0814" },
+   { icon: "📍", label: "Localização", value: "Maceió – Alagoas" },
+   { icon: "✉️", label: "E-mail", value: "flaviogouveia1998@gmail.com" },
+   { icon: "📞", label: "Telefone", value: "(82) 99997-1329" },
 ];
 
 const services = [

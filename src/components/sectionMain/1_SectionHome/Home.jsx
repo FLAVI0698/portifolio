@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './StylesHome.module.css'
 import { AnimationArrow } from './AnimationArrow/AnimationArrow'
-import { Aside } from '../0_SectionAside/Aside'
+
 
 export const Home = () => {
 
@@ -23,7 +23,7 @@ export const Home = () => {
                
                <AnimationArrow />
             </div>
-            <Aside/>
+            
          </section>
       </>
    )
